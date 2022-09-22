@@ -7,4 +7,4 @@ description: A brief overview of the procedures and assumptions that need to be 
 image: /assets/images/regression.png
 ---
 
-Blog content
+# What is linear regression?
