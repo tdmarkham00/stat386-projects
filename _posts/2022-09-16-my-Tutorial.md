@@ -8,3 +8,4 @@ image: /assets/images/regression.png
 ---
 
 # What is linear regression?
+Linear regression is a widely used statistical technique that is applied in situations where you'd like to model a relationship between two sets of variables.
