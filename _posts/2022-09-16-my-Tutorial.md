@@ -15,3 +15,6 @@ Understanding the data is absolutely essential when do any sort of analytics. If
 
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dataset.png) ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/summary.png)
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dataset.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/summary.png)
