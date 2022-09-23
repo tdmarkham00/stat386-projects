@@ -15,5 +15,3 @@ Understanding the data is absolutely essential when do any sort of analytics. If
 
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dataset.png) ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/summary.png)
 
-
-![alt-text-1](dataset.png "title-1" =20%x) ![alt-text-2](summary.png "title-2" =75%x)
