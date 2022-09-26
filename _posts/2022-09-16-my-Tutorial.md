@@ -26,6 +26,8 @@ The scatter plot gives us a bit of an idea that there is some sort of relationsh
 ### Creating the intial model
 Creating an initial regression model in R is very easy, and can be done with the following code: model <- lm(Distance ~ Speed, data = stop). We make use of the lm() command, which takes two inputs. The first input is our Y variable and X variable seperated by the ~. In our case, we are comparing distance against speed so it looks like Distance ~ Speed. The second input just names the data set being used, or in this case the stop data set. Remember y = mx + b from earlier? Here's what it looks like after fitting this model.
 
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/model1.png)
+
 ### Checking assumptions
 Now that we've had a chance to understand the data and define our variables, the next step is to make sure that we can actually use this model. There are six guidelines that help us determine how useful this model is. We can use the acronymn LINEAR to better understand what the assumptions are. We will also go over diagnosing problems and then fixing them.
 
