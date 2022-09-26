@@ -50,5 +50,5 @@ Because we are doing linear regression, this assumption is vital and can't be ig
 
 Scatter Plot              | Residual Vs Fitted
 :-------------------------:|:-------------------------:
-![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/scatter.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/summary.png)
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/scatter.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/resvsfitted.png)
 
