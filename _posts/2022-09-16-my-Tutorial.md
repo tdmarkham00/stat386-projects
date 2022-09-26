@@ -28,6 +28,8 @@ Creating an initial regression model in R is very easy, and can be done with the
 
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/model1.png)
 
+It's also important to save the residuals and fitted values that are generated from the model for use in checking assumptions. That can be done as such: stop$Fitted <- model$fitted.values, stop$Residuals <- model$residuals
+
 ## Checking assumptions
 Now that we've had a chance to understand the data and define our variables, the next step is to make sure that we can actually use this model. There are six guidelines that help us determine how useful this model is. We can use the acronymn LINEAR to better understand what the assumptions are. We will also go over diagnosing problems and then fixing them.
 
@@ -52,3 +54,10 @@ Scatter Plot              | Residual Vs Fitted
 :-------------------------:|:-------------------------:
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/scatter.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/resvsfitted.png)
 
+You can notice that the scatter plot has a bit of a curve to it, indicating that there is not a totally linear relationship between our variables. The residual vs fitted plot is also helpful to check for linearity. If the data were linear, the blue line would run perfectly horizontal across the x-axis. In this case there is a parabolic shape, indicating a problem with linearity. In order to fix linearity issues, it's better to consider transforming X, and then Y if problems persist. We'll go over that more towards the end.
+
+#### Independence of residuals
+There is no particular "test" for checking that this assumption is met, you moreso have to think about where your data came from. If you're confident that each observation of your data has been taken independently and doesn't influence other observations, you can usually mark this assumption as met. When it isn't met, there can be bias that isn't accounted for that influences results
+
+#### Normally distributed residuals centered at zero
+Checking that the residuals are normally distributed is important for making sure that any confidence intervals taht we generate from this model are accurate.
