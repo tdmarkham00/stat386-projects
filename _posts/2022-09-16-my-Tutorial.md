@@ -27,8 +27,15 @@ The scatter plot gives us a bit of an idea that there is some sort of relationsh
 Now that we've had a chance to understand the data and define our variables, the next step is to make sure that we can actually use this model. There are six guidelines that help us determine how useful this model is. We can use the acronymn LINEAR to better understand what the assumptions are. We will also go over diagnosing problems and then fixing them.
 
 L - Linear relationship between X and Y
+
 I - Independence of residuals
+
 N - Normally distributed residuals centered at zero
+
 E - Equal variance for residuals across all values of X
+
 A - All observations are being described
+
 R - Required additional predictor variables
+
+
