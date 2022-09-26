@@ -60,4 +60,8 @@ You can notice that the scatter plot has a bit of a curve to it, indicating that
 There is no particular "test" for checking that this assumption is met, you moreso have to think about where your data came from. If you're confident that each observation of your data has been taken independently and doesn't influence other observations, you can usually mark this assumption as met. When it isn't met, there can be bias that isn't accounted for that influences results
 
 #### Normally distributed residuals centered at zero
-Checking that the residuals are normally distributed is important for making sure that any confidence intervals taht we generate from this model are accurate.
+Checking that the residuals are normally distributed is important for making sure that any confidence intervals that we generate from this model are accurate. There are three good ways to visualize normality, and those are histograms, box plots, and a normal probability plot. Here are some examples with their code required
+
+Scatter Plot              | Residual Vs Fitted |       other plot
+:-------------------------:|:-------------------------:|:-------------------------:
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/scatter.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/resvsfitted.png) | ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/scatter.png)
