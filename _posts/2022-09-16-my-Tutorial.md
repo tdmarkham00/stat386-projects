@@ -62,6 +62,6 @@ There is no particular "test" for checking that this assumption is met, you more
 #### Normally distributed residuals centered at zero
 Checking that the residuals are normally distributed is important for making sure that any confidence intervals that we generate from this model are accurate. There are three good ways to visualize normality, and those are histograms, box plots, and a normal probability plot. Here are some examples with their code required
 
-Scatter Plot              | Residual Vs Fitted |       other plot
+Histogram              | Boxplot |  Normality Q-Q Plot
 :-------------------------:|:-------------------------:|:-------------------------:
-![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/scatter.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/resvsfitted.png) | ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/scatter.png)
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/hist.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/box.png) | ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/qq.png)
