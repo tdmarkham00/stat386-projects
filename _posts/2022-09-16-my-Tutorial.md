@@ -47,7 +47,7 @@ R - Required additional predictor variables
 
 Now to discuss each on more specifically and how to deal with them!
 
-#### Linear relationship between X and Y
+#### -Linear relationship between X and Y-
 Because we are doing linear regression, this assumption is vital and can't be ignored. Like most of these assumptions, we can use visual tools to diagnose a problem. For this assumption we can refer back to our scatter plot first. We will also look at another plot called the residual vs fitted plot. We won't go into too much details on these plots, mostly focusing on how to interpret them in this context.
 
 Scatter Plot              | Residual Vs Fitted
@@ -56,14 +56,24 @@ Scatter Plot              | Residual Vs Fitted
 
 You can notice that the scatter plot has a bit of a curve to it, indicating that there is not a totally linear relationship between our variables. The residual vs fitted plot is also helpful to check for linearity. If the data were linear, the blue line would run perfectly horizontal across the x-axis. In this case there is a parabolic shape, indicating a problem with linearity. In order to fix linearity issues, it's better to consider transforming X, and then Y if problems persist. We'll go over that more towards the end.
 
-#### Independence of residuals
-There is no particular "test" for checking that this assumption is met, you moreso have to think about where your data came from. If you're confident that each observation of your data has been taken independently and doesn't influence other observations, you can usually mark this assumption as met. When it isn't met, there can be bias that isn't accounted for that influences results
+#### -Independence of residuals-
+There is no particular "test" for checking that this assumption is met, you moreso have to think about where your data came from. If you're confident that each observation of your data has been taken independently and doesn't influence other observations, you can usually mark this assumption as met. When it isn't met, there can be bias that isn't accounted for that influences results. Problems with this assumption usually involve using a different type of model altogether.
 
-#### Normally distributed residuals centered at zero
-Checking that the residuals are normally distributed is important for making sure that any confidence intervals that we generate from this model are accurate. There are three good ways to visualize normality, and those are histograms, box plots, and a normal probability plot. Here are some examples with their code required
+#### -Normally distributed residuals centered at zero-
+Checking that the residuals are normally distributed is important for making sure that any confidence intervals that we generate from this model are accurate. There are three good ways to visualize normality, and those are histograms, box plots, and a normal probability plot. Here are some examples with their code required:
 
 Histogram              | Boxplot |  Normality Q-Q Plot
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/hist.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/box.png) | ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/qq.png)
 
-The normal histogram should be centered around zero, with the bell-shaped redline over the data. The boxplot should also be centered around zero, with the median line in the center of the box. There ideally shouldn't be any dots outside of the "whiskers" of the plot. The Q-Q plot is something that might be new to some. Basically, all the points should hug the diagonal line pretty tight.
+The normal histogram should be centered around zero, with the bell-shaped redline over the data. The boxplot should also be centered around zero, with the median line in the center of the box. There ideally shouldn't be any dots outside of the "whiskers" of the plot. The Q-Q plot is something that might be new to some. Basically, all the points should hug the diagonal line pretty tight. We can see that both the histogram and the boxplot both indicate normality. The Q-Q plot does have some points that are starting to get a bit more distanced from the line, but it's generally ok. I think that the normality assumption is met here. If this assumption weren't met, transformations on our Y value can usually help.
+
+#### -Equal variance across all values of X-
+Equal variance in the model relates to the standard error of the estimates in our data. If this assumption is not met, we know that the standard errors will be wrong. There are two methods for checking this assumption. The first one is a visual test, and it involves the residual vs fitted plot from before. Instead of looking at the blue line, we look more at the overall horizontal distance between points. If that distance is constant throughout, we're good to go. Another way to check is the Brown-Forsyth test. This is basically a hypothesis test that returns a p-value. If the p-value is low, we can reject the null hypothesis that the variance is equal. You can run a Brown-Forsyth test with this code:
+
+grp <- as.factor(c(rep("lower", floor(dim(stop)[1] / 2)), 
+                   rep("upper", ceiling(dim(stop)[1] / 2))))
+leveneTest(unlist(stop[order(stop$Speed), "Residuals"]) ~ grp, 
+           center = median)
+            
+This data set fails both of these tests. If you go back to the residual vs fitted plot, there are points at high values of X that are more spaced out than in other places on the plot. The Brown-Forsythe test also returns a p-value of about 0.02, which is lower than an alpha of 0.05 and thus significant.           
