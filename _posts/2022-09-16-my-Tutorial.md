@@ -97,6 +97,11 @@ Unfortunately, not all of the assumptions were met in our model. Specifically, t
 
 For this data, the best transformation is taking the square root of our Y, which is distance in feet. We can create another model and take a look at the equation and scatter plot once more.
 
-
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/updatedmodel.png)
 
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/transformedplot.png)
+
+That's looking much better! We won't go over all the tests again, but this Y transformation allows us to check all of the assumptions for this model!
+
+## Interpreting the results
+After we transform the data, it's helpful to plot the transformed data on the original scale. We replot the original data but add the regression line that has been fitted to the transformed data. We do this by essentially undoing the transformation, in this case squaring values to undo the square root. The code looks like this:
