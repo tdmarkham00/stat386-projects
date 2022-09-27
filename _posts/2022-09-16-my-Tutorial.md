@@ -86,3 +86,14 @@ This assumption checks for influential points, including outliers, that may be i
 Cook's Distance             | DFBETA |  DFFITS
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/cook.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dfbeta.png) | ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dffit.png)
+
+As you can see in the plots, each test has a horizontal red line. Any points too far from that line may be considered an infuential point. Hopefully, transforming data to fix other assumptions can make those go away, but if not you can run your model with and without those points and see if there is a difference. In our case, there are a few points that are a bit too far to be ignored.
+
+#### -Required additional predictor variables-
+In most cases, adding more data to our model is helpful. Think about a few things that you might want to know to help make this model more accurate? Maybe road conditions, the type of tires, etc. These are situations where you would want to add another predictor variable to get a better model. Because this post is just about simple linear regression, we will assume this is ok for now.
+
+## Transforming the data when assumptions aren't met
+Unfortunately, not all of the assumptions were met in our model. Specifically, the assumptions of linearity, equal variance, and all observations being represented. When this happens, we can adjust our model by transforming the data. We won't go too in depth about it. The most common types of transformations include logarithmic transformations and square root functions. The process can be cumbersome and requires some trial and error. You start by making a transformation, say taking the log of your Y values, and then following the steps above to make sure assumptions are met. If they aren't, you try another transformation and check again.
+
+For this data, the best transformation is taking the square root of our Y, which is distance in feet. We can create another model and take a look at the scatter plot once more.
+
