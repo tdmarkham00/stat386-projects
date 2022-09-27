@@ -81,7 +81,7 @@ This data set fails both of these tests. If you go back to the residual vs fitte
 #### -All values represented-
 This assumption checks for influential points, including outliers, that may be influencing our line too heavily. There are a few good tests for checking this assumption. These are called Cook's Distance, DFBETA, and DFFIT. The code to generate these tests is a bit more lengthy, so I've attatched a screenshot.
 
-![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/codesnippet.png)
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/codesnip.png)
 
 Cook's Distance             | DFBETA |  DFFITS
 :-------------------------:|:-------------------------:|:-------------------------:
