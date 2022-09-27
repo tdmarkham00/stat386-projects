@@ -26,7 +26,7 @@ The scatter plot gives us a bit of an idea that there is some sort of relationsh
 ## Creating the intial model
 Creating a regression model in R is very easy, and can be done with the following code: model <- lm(Distance ~ Speed, data = stop). We make use of the lm() command, which takes two inputs. The first input is our Y variable and X variable seperated by the ~. In our case, we are comparing distance against speed so it looks like Distance ~ Speed. The second input just names the data set being used, or in this case the stop data set. Remember y = mx + b from earlier? Here's what it looks like after fitting this model.
 
-![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/model1.png)
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/distance.png)
 
 It's also important to save the residuals and fitted values that are generated from the model for use in checking assumptions. That can be done as such: stop$Fitted <- model$fitted.values, stop$Residuals <- model$residuals
 
@@ -97,7 +97,7 @@ Unfortunately, not all of the assumptions were met in our model. Specifically, t
 
 For this data, the best transformation is taking the square root of our Y, which is distance in feet. We can create another model and take a look at the equation and scatter plot once more.
 
-![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/updatedmodel.png)
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/updateddistance.png)
 
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/transformedplot.png)
 
