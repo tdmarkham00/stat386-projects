@@ -76,4 +76,6 @@ grp <- as.factor(c(rep("lower", floor(dim(stop)[1] / 2)),
 leveneTest(unlist(stop[order(stop$Speed), "Residuals"]) ~ grp, 
            center = median)
             
-This data set fails both of these tests. If you go back to the residual vs fitted plot, there are points at high values of X that are more spaced out than in other places on the plot. The Brown-Forsythe test also returns a p-value of about 0.02, which is lower than an alpha of 0.05 and thus significant.           
+This data set fails both of these tests. If you go back to the residual vs fitted plot, there are points at high values of X that are more spaced out than in other places on the plot. The Brown-Forsythe test also returns a p-value of about 0.02, which is lower than an alpha of 0.05 and thus significant. Transformations with this assumption also typically involve transforming Y values.
+
+#### -All values represented-
