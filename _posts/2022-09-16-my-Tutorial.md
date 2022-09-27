@@ -79,3 +79,10 @@ leveneTest(unlist(stop[order(stop$Speed), "Residuals"]) ~ grp,
 This data set fails both of these tests. If you go back to the residual vs fitted plot, there are points at high values of X that are more spaced out than in other places on the plot. The Brown-Forsythe test also returns a p-value of about 0.02, which is lower than an alpha of 0.05 and thus significant. Transformations with this assumption also typically involve transforming Y values.
 
 #### -All values represented-
+This assumption checks for influential points, including outliers, that may be influencing our line too heavily. There are a few good tests for checking this assumption. These are called Cook's Distance, DFBETA, and DFFIT. The code to generate these tests is a bit more lengthy, so I've attatched a screenshot.
+
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/codesnippet.png)
+
+Cook's Distance             | DFBETA |  DFFITS
+:-------------------------:|:-------------------------:|:-------------------------:
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/cook.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dfbeta.png) | ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dffit.png)
