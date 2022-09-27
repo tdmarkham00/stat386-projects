@@ -95,5 +95,8 @@ In most cases, adding more data to our model is helpful. Think about a few thing
 ## Transforming the data when assumptions aren't met
 Unfortunately, not all of the assumptions were met in our model. Specifically, the assumptions of linearity, equal variance, and all observations being represented. When this happens, we can adjust our model by transforming the data. We won't go too in depth about it. The most common types of transformations include logarithmic transformations and square root functions. The process can be cumbersome and requires some trial and error. You start by making a transformation, say taking the log of your Y values, and then following the steps above to make sure assumptions are met. If they aren't, you try another transformation and check again.
 
-For this data, the best transformation is taking the square root of our Y, which is distance in feet. We can create another model and take a look at the scatter plot once more.
+For this data, the best transformation is taking the square root of our Y, which is distance in feet. We can create another model and take a look at the equation and scatter plot once more.
 
+
+
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/transformedplot.png)
