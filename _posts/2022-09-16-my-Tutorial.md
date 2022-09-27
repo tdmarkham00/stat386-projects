@@ -19,7 +19,7 @@ Understanding the data is essential when doing any analytics. If you don't know 
 
 After inspecting the data, we want to make sure that we have properly defined the predictor and outcome variables. Remember that the idea is to see if there is any relationship between the speed of the car and the distance it takes to stop. Think for a moment about which variable you'd like to use to predict the other. If you picked speed as your predictor and distance as the outcome, you'd be correct. Let's plot the relationship using a ggplot scatter plot and see what we find.
 
-![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/scatter.png)
+![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/badline.png)
 
 The scatter plot gives us a bit of an idea that there is some sort of relationship between distance and speed. Now it's time to fit that regression line!
 
