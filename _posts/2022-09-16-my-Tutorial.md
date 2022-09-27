@@ -65,3 +65,5 @@ Checking that the residuals are normally distributed is important for making sur
 Histogram              | Boxplot |  Normality Q-Q Plot
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/hist.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/box.png) | ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/qq.png)
+
+The normal histogram should be centered around zero, with the bell-shaped redline over the data. The boxplot should also be centered around zero, with the median line in the center of the box. There ideally shouldn't be any dots outside of the "whiskers" of the plot. The Q-Q plot is something that might be new to some. Basically, all the points should hug the diagonal line pretty tight.
