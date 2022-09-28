@@ -48,7 +48,7 @@ R - Required additional predictor variables
 Now to discuss each on more specifically and how to deal with them!
 
 #### -Linear relationship between X and Y-
-Because we are doing linear regression, this assumption is vital and can't be ignored. Like most of these assumptions, we can use visual tools to diagnose a problem. For this assumption we can refer back to our scatter plot first. We will also look at another plot called the residual vs fitted plot. We won't go into too much details on these plots, mostly focusing on how to interpret them in this context.
+Because we are doing linear regression, linearity is vital and must be present. Like most of these assumptions, we can use visual tools to diagnose a problem. Here, we can refer back to our scatter plot first. We will also look at another plot called the residual vs fitted plot. We won't go into too much details on these plots, mostly focusing on how to interpret them in this context.
 
 Scatter Plot              | Residual Vs Fitted
 :-------------------------:|:-------------------------:
@@ -60,7 +60,7 @@ You can notice that the scatter plot has a bit of a curve to it, indicating that
 There is no particular "test" for checking that this assumption is met. You really have to think about where your data came from and its context. If you're confident that each observation of your data has been taken independently and doesn't influence other observations, you can usually mark this assumption as met. When it isn't met, there can be bias that isn't accounted for that influences results. Problems with this assumption usually involve using a different type of model altogether.
 
 #### -Normally distributed residuals centered at zero-
-Checking that the residuals are normally distributed is important for making sure that any confidence intervals generated from this model are accurate. There are three good ways to visualize normality, and those are histograms, box plots, and a normal probability plot. Here are some examples with their code required:
+Checking that the residuals are normally distributed is important for making sure that any confidence intervals generated from this model are accurate. There are three good ways to visualize normality, and those are histograms, box plots, and a normal probability plot. Here are some examples:
 
 Histogram              | Boxplot |  Normality Q-Q Plot
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -87,7 +87,7 @@ Cook's Distance             | DFBETA |  DFFITS
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/cook.png)  |  ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dfbeta.png) | ![Figure](https://github.com/tdmarkham00/stat386-projects/raw/main/assets/images/dffit.png)
 
-As you can see in the plots, each test has a horizontal red line. Any points too far from that line may be considered an infuential point. Transforming data to fix other assumptions can make those go away, but if not you can run your model with and without those points and see if there is a difference. In our case, there are a few points that are a bit too far to be ignored.
+As you can see in the plots, each test has a horizontal red line. Any points too far from that line may be considered an influential point. Transforming data to fix other assumptions can make those go away, but if not you can run your model with and without those points and see if there is a difference. In our case, there are a few points that are a bit too far to be ignored.
 
 #### -Required additional predictor variables-
 In most cases, adding more data to our model is helpful. Think about a few things that you might want to know to help make this model more accurate? Maybe road conditions, the type of tires, etc. These are situations where you would want to add another predictor variable to get a better model. Because this post is just about simple linear regression, we will assume this is ok for now.
