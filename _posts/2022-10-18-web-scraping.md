@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "My project 2"
-date:   2022-08-03
-author: Project Author
-description: This is a cool project.
+title:  "IMDb Top 250 Movies"
+date:   2022-10-18
+author: Tanner Markham
+description: Getting data from the web using web scraping and API techinques!
 image: 
 ---
 
