@@ -90,6 +90,6 @@ top250 = pd.DataFrame({
 There you have it, a pandas dataframe containing information about the top 250 movies according to IMDb!
 
 # Conclusion
-Statistics and data science are awesome, and allow you to tell amazing stories using data! People sometimes forget that actually getting the data can be a big chunk of the process. There are many ways to get data, and one of the coolest ways is getting data from the internet using APIs and web scraping tools. Hopefully this can give an idea of how the process works and get you excited about going and getting data for your own personal projects. Now if you'll excuse me, I think I'd better go and find a good movie to watch.
+Statistics and data science are awesome, and allow you to tell amazing stories using data! People sometimes forget that actually getting the data can be a big chunk of the process. There are many ways to get data, and one of the coolest ways is getting data from the internet using APIs and web scraping tools. Hopefully this can give an idea of how the process works and get you excited about going and getting data for your own personal projects. Stay tuned for an additional post where we do some EDA and visualizations using this data! Now if you'll excuse me, I think I'd better go and find a good movie to watch.
 
 <img src="https://raw.githubusercontent.com/tdmarkham00/stat386-projects/main/assets/images/movie.jpg" alt="Person watching a movie" style="width:700px; height:400px"/>
