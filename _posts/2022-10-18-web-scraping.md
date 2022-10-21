@@ -14,7 +14,7 @@ One of the most wonderful things about statistics and data science, is that you 
 ## Gathering Data
 ## Tools
 
-<img src="https://raw.githubusercontent.com/tdmarkham00/stat386-projects/main/assets/images/webscraping.png" alt="" style="width:400px;"/>
+<img src="https://raw.githubusercontent.com/tdmarkham00/stat386-projects/main/assets/images/webscraping.png" alt="Web scraping tools" style="width:500px;"/>
 
 ```
 import pandas as pd
@@ -89,3 +89,5 @@ There you have it, a pandas dataframe containing information about the top 250 m
 
 # Conclusion
 Statistics and data science are awesome, and allow you to tell amazing stories using data! People sometimes forget that actually getting the data can be a big chunk of the process. There are many ways to get data, and one of the coolest ways is getting data from the internet using APIs and web scraping tools. Hopefully this can give an idea of how the process works and get you excited about going and getting data for your own personal projects. Now if you'll excuse me, I think I'd better go and find a good movie to watch.
+
+<img src="https://raw.githubusercontent.com/tdmarkham00/stat386-projects/main/assets/images/movie.jpg" alt="Person watching a movie" style="width:700px; height:400px"/>
